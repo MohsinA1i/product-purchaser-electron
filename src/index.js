@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Amplify from 'aws-amplify';
 
 import './index.css';
+import MyTitleBar from './TitleBar/TitleBar.js';
 import App from './App/App.js';
 
 Amplify.configure({
@@ -28,6 +29,7 @@ Amplify.configure({
 
 ReactDOM.render(
   <React.StrictMode>
+    <MyTitleBar/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
