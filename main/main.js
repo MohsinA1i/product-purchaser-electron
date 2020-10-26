@@ -6,11 +6,13 @@ const isDev = require('electron-is-dev');
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    // Remove the window frame from windows applications
+    frame: false,
+    // Hide the titlebar from MacOS applications while keeping the stop lights
+    titleBarStyle: 'hidden',
     webPreferences: {
-      nodeIntegration: false,
-      enableRemoteModule: false,
-      worldSafeExecuteJavaScript: true,
-      contextIsolation: true,
+      nodeIntegration: true,
+      enableRemoteModule: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })

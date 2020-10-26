@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
-function App() {
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import MyTitleBar from '../TitleBar/TitleBar.js';
+
+const App = () => {
   return (
     <div className="App">
+      <MyTitleBar></MyTitleBar>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,4 +22,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);;
+export default withAuthenticator(App);
