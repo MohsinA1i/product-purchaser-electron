@@ -48,6 +48,7 @@ const MyTitleBar = () => {
       maximized={maximized}
       theme={{
         bar: {
+          background: 'rgb(0, 21, 41)',
           borderBottom: ''
         }
       }}

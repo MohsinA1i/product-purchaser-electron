@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Amplify from 'aws-amplify';
 
-import './index.css';
+import 'antd/dist/antd.css';
 import MyTitleBar from './TitleBar/TitleBar.js';
 import App from './App/App.js';
 
