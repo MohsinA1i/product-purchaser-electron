@@ -11,7 +11,8 @@ import {
     IdcardOutlined,
     CreditCardOutlined,
     GoogleOutlined,
-    SettingOutlined
+    SettingOutlined,
+    LogoutOutlined
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -24,6 +25,7 @@ const SideBar = () => {
             {collapsed ? 
             <MenuOutlined className="toggle" onClick={() => collapse(!collapsed)}/> :
             <CloseOutlined className="toggle" onClick={() => collapse(!collapsed)}/>}
+
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                 <Menu.Item key="1" icon={<FileTextOutlined />}>
                     Tasks
@@ -42,6 +44,9 @@ const SideBar = () => {
                 </Menu.Item>
                 <Menu.Item key="6" icon={<SettingOutlined />}>
                     Settings
+                </Menu.Item>
+                <Menu.Item key="7" icon={<LogoutOutlined />}>
+                    Logout
                 </Menu.Item>
             </Menu>
         </Sider>
